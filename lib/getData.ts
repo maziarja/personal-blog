@@ -5,7 +5,7 @@ export async function getData(
 ) {
   const res = await fetch(
     `${process.env.STRAPI_URL}/api/${collection}?populate=*&sort=createdAt:desc&${fields}&pagination[limit]=${limit}`,
-    { cache: "no-cache", next: { revalidate: 0 } },
+    { cache: "no-store" },
   );
 
   if (!res.ok) {
