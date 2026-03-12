@@ -1,4 +1,5 @@
-import { Separator } from "@/components/ui/separator";
+export const dynamic = "force-dynamic";
+
 import { getData } from "@/lib/getData";
 import Link from "next/link";
 import React from "react";
