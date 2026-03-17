@@ -13,21 +13,21 @@ export default function BlocksContentRenderer({ content }: any) {
           }
           if (plainText?.startsWith("💡")) {
             return (
-              <div className="w-full rounded-xl border border-green-500 bg-green-200 p-3">
+              <div className="w-full rounded-xl border border-green-500 bg-green-200 p-3 dark:border-green-700 dark:bg-green-900">
                 {children}
               </div>
             );
           }
           if (plainText?.startsWith("⚠️")) {
             return (
-              <div className="w-full rounded-xl border border-yellow-500 bg-yellow-200 p-3">
+              <div className="w-full rounded-xl border border-yellow-500 bg-yellow-200 p-3 dark:border-yellow-700 dark:bg-yellow-900">
                 {children}
               </div>
             );
           }
           if (plainText?.startsWith("ℹ️")) {
             return (
-              <div className="w-full rounded-xl border border-blue-500 bg-blue-200 p-3">
+              <div className="w-full rounded-xl border border-blue-500 bg-blue-200 p-3 dark:border-blue-700 dark:bg-blue-900">
                 {children}
               </div>
             );
