@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@strapi/blocks-react-renderer": "^1.0.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.575.0",
@@ -29,6 +30,7 @@
     "@types/react-dom": "^19",
     "eslint": "^10.0.1",
     "eslint-config-next": "^0.2.4",
+    "husky": "^9.1.7",
     "prettier": "^3.8.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "shadcn": "^3.8.5",

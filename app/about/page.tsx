@@ -2,6 +2,8 @@ import SocialMedia from "@/components/home/SocialMedia";
 import { getData } from "@/lib/getData";
 import Image from "next/image";
 import Markdown from "react-markdown";
+import workPlaceImageLarge from "@/public/images/image-workspace-large.jpg";
+import workPlaceImageSmall from "@/public/images/image-workspace-small.jpg";
 
 async function Page() {
   const about = await getData("about");
@@ -23,20 +25,14 @@ async function Page() {
           {about.text1}
         </Markdown>
         <Image
-          src={`${process.env.STRAPI_URL}${about.image[0].url}`}
-          width={about.image[0].width}
-          height={about.image[0].height}
-          alt={about.image[0].alternativeText}
+          src={workPlaceImageSmall}
+          alt="work place image"
           className="rounded-lg md:hidden"
-          unoptimized
         />
         <Image
-          src={`${process.env.STRAPI_URL}${about.image[1].url}`}
-          width={about.image[1].width}
-          height={about.image[1].height}
-          alt={about.image[1].alternativeText}
+          src={workPlaceImageLarge}
+          alt="work place image"
           className="hidden rounded-lg md:block"
-          unoptimized
         />
         <Markdown
           components={{

@@ -70,8 +70,28 @@
   letter-spacing: -0.4px;
 }
 
+h1 {
+  @apply text-preset-1;
+}
+
 h2 {
-  @apply text-[28px] leading-[130%] font-bold tracking-[-0.5px];
+  @apply text-preset-2;
+}
+
+h3 {
+  @apply text-preset-3;
+}
+
+h4 {
+  @apply text-preset-4;
+}
+
+h5 {
+  @apply text-preset-5;
+}
+
+h6 {
+  @apply text-preset-6;
 }
 
 hr {
@@ -79,7 +99,7 @@ hr {
 }
 
 blockquote {
-  @apply border-l-4 border-gray-400;
+  @apply border-l-4 border-gray-400 pl-2;
 }
 blockquote p {
   @apply pl-2;
@@ -91,7 +111,7 @@ ul {
 }
 
 ol li {
-  @apply list-decimal;
+  @apply text-preset-7 list-decimal;
 }
 
 li {
@@ -99,7 +119,7 @@ li {
 }
 
 ul li {
-  @apply list-disc;
+  @apply text-preset-7 list-disc;
 }
 
 ol li::marker {
@@ -112,6 +132,10 @@ strong {
 
 pre {
   @apply bg-muted text-preset-9 rounded-xl p-3 text-wrap;
+}
+
+code {
+  @apply bg-muted rounded-lg px-1 py-1.5;
 }
 
 table {
