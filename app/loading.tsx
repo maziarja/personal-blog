@@ -13,7 +13,7 @@ export default function Loading() {
           This app runs on a free server that goes to sleep when inactive.
           <br />
           It usually takes{" "}
-          <span className="text-foreground font-medium">10–30 seconds</span> to
+          <span className="text-foreground font-medium">40–90 seconds</span> to
           start again.
         </p>
 
